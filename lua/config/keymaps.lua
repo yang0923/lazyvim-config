@@ -4,3 +4,7 @@
 
 -- 使用 jj 退出插入模式
 vim.keymap.set("i", "jj", "<Esc>", { desc = "Exit insert mode" })
+
+-- 退出终端模式
+vim.keymap.set("t", "jj", "<C-\\><C-n>", { desc = "Exit terminal insert mode" })
+vim.keymap.set("t", "<Esc>", "<C-\\><C-n>", { desc = "Exit terminal insert mode" })
