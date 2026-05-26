@@ -9,7 +9,9 @@
 
 -- 文件查找器 (picker) 配置
 -- 强制显示的文件/文件夹
-local picker_include = {}
+local picker_include = {
+  ".i18nrc.lua",
+}
 -- 强制隐藏的文件/文件夹
 local picker_exclude = {
   "dist",
