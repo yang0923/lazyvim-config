@@ -7,7 +7,8 @@ return {
   config = function()
     -- 全局配置中无需再写 locales 和 sources，它们会被项目配置覆盖
     require("i18n").setup({
-      -- 这里可以为空，或者只放一些键位映射
+      locales = { "zh-CN", "en" },
+      sources = { "locales/{locales}.json" },
     })
 
     -- 键位映射保持不变
