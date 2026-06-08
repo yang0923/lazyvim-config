@@ -11,6 +11,7 @@
 -- 强制显示的文件/文件夹
 local picker_include = {
   ".i18nrc.lua",
+  ".env*",
 }
 -- 强制隐藏的文件/文件夹
 local picker_exclude = {
