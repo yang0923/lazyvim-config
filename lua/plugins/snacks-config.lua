@@ -12,6 +12,8 @@
 local picker_include = {
   ".i18nrc.lua",
   ".env*",
+  ".markdownlint.json",
+  ".gitignore",
 }
 -- 强制隐藏的文件/文件夹
 local picker_exclude = {
