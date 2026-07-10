@@ -14,12 +14,12 @@ local picker_include = {
   ".env*",
   ".markdownlint.json",
   ".gitignore",
+  "logs",
 }
 -- 强制隐藏的文件/文件夹
 local picker_exclude = {
   "dist",
   "target",
-  "logs",
   "node_modules",
   "__pycache__",
   "www",

@@ -14,7 +14,7 @@ return {
                 -- "strict"   : 严格模式，启用绝大多数检查规则，适合高质量代码项目。
                 -- "all"      : (BasedPyright 特有) 启用所有可能的检查规则，最严格。
                 -- "recommended" : (BasedPyright 特有) 推荐模式，启用所有诊断规则但分级报告，减少告警疲劳。
-                typeCheckingMode = "off",
+                typeCheckingMode = "recommended",
 
                 autoImportCompletions = true, -- 启用自动导入补全
               },
