@@ -20,6 +20,10 @@ if vim.fn.has("win32") == 1 then
     -- 使用 PowerShell 作为终端
     vim.opt.shell = "pwsh.exe"
     vim.opt.shellcmdflag = "-NoLogo -NoProfile -ExecutionPolicy RemoteSigned -Command"
+    -- 必须清空 shellxquote：否则 nvim 会把命令包在引号里传给 pwsh，
+    -- pwsh 把引号内的内容当字符串字面量输出而不是执行（例如 git 分支名返回命令原文），
+    -- 会导致 persistence.nvim 的会话文件名损坏、退出时报 E190。
+    vim.opt.shellxquote = ""
     vim.opt.shellpipe = "2>&1 | Out-File -Encoding UTF8 %s; exit $LastExitCode"
     vim.opt.shellredir = "2>&1 | Out-File -Encoding UTF8 %s; exit $LastExitCode"
   else

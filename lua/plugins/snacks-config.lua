@@ -13,6 +13,7 @@ local picker_include = {
   ".i18nrc.lua",
   ".env*",
   ".markdownlint.json",
+  ".markdownlint-cli2.yaml",
   ".gitignore",
   "logs",
 }
